@@ -11,7 +11,7 @@ import { scanMint } from './solana.js'
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const tokenConfig = JSON.parse(await fs.promises.readFile(path.join(root, 'config/token.config.json'), 'utf8')) as { name: string; symbol: string; decimals: number; supply: number }
 const projectConfig = JSON.parse(await fs.promises.readFile(path.join(root, 'config/project.config.json'), 'utf8')) as {
-  status: string; mintAddress: string; officialWebsite: string; englishWhitepaperUrl: string
+  status: string; mintAddress: string; devnetMintAddress?: string; officialWebsite: string; englishWhitepaperUrl: string
   circulatingSupply: { amount: number; asOfUtc: string; methodologyUrl: string }
 }
 if (projectConfig.status === 'launched' && (
@@ -38,6 +38,7 @@ app.get('/api/token', (_req, res) => {
   res.json({
     status: projectConfig.status, name: tokenConfig.name, symbol: tokenConfig.symbol, network: 'solana',
     mintAddress: projectConfig.mintAddress || null, decimals: tokenConfig.decimals,
+    devnetMintAddress: projectConfig.devnetMintAddress || null,
     maximumSupply: tokenConfig.supply, totalSupply: projectConfig.status === 'launched' ? tokenConfig.supply : 0,
     circulatingSupply: projectConfig.status === 'launched' && projectConfig.circulatingSupply.asOfUtc ? projectConfig.circulatingSupply.amount : null,
     circulatingSupplyAsOfUtc: projectConfig.circulatingSupply.asOfUtc || null,

@@ -16,6 +16,7 @@
     "token:verify": "tsx scripts/verify-token.ts",
     "token:distribute": "tsx scripts/distribute-token.ts",
     "token:lock-founder": "tsx scripts/create-devnet-founder-lock.ts",
+    "token:multisig-treasury": "tsx scripts/create-devnet-treasury-multisig.ts",
     "listing:check": "tsx scripts/check-listing-readiness.ts",
     "release:manifest": "tsx scripts/generate-release-manifest.ts"
   },

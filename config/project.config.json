@@ -1,15 +1,16 @@
 {
   "status": "prelaunch",
   "mintAddress": "",
+  "devnetMintAddress": "AkGtTz4FgowEznDoxnnRpaVfAuBBKJbdEh8xkDgHA6nQ",
   "projectName": "TokenLucid",
   "englishName": "TokenLucid",
-  "officialWebsite": "https://YOUR_DOMAIN",
+  "officialWebsite": "https://tokenlucid.onrender.com",
   "officialEmail": "hello@YOUR_DOMAIN",
-  "sourceCodeUrl": "https://github.com/YOUR_ORG/tokenlucid",
-  "englishWhitepaperUrl": "https://YOUR_DOMAIN/whitepaper-en.pdf",
-  "turkishWhitepaperUrl": "https://YOUR_DOMAIN/whitepaper.pdf",
-  "privacyUrl": "https://YOUR_DOMAIN/privacy.html",
-  "termsUrl": "https://YOUR_DOMAIN/terms.html",
+  "sourceCodeUrl": "https://github.com/Abuzerince/tokenlucid",
+  "englishWhitepaperUrl": "https://tokenlucid.onrender.com/whitepaper-en.pdf",
+  "turkishWhitepaperUrl": "https://tokenlucid.onrender.com/whitepaper.pdf",
+  "privacyUrl": "https://tokenlucid.onrender.com/privacy.html",
+  "termsUrl": "https://tokenlucid.onrender.com/terms.html",
   "socials": {
     "x": "",
     "telegram": "",
@@ -38,6 +39,6 @@
   "circulatingSupply": {
     "amount": 0,
     "asOfUtc": "",
-    "methodologyUrl": "https://YOUR_DOMAIN/circulating-supply"
+    "methodologyUrl": "https://github.com/Abuzerince/tokenlucid/blob/main/docs/CIRCULATING_SUPPLY.md"
   }
 }

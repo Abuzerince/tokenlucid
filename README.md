@@ -1,5 +1,7 @@
 # TokenLucid / TLCD
 
+Canlı beta: https://tokenlucid.onrender.com
+
 TokenLucid, Solana tokenleri için zincir üstü risk göstergelerini açıklanabilir bir puana dönüştüren açık metodolojili analiz ürünüdür. TLCD, gelecekte ayrıntılı rapor erişimi ve doğrulanmış katkı ödülleri için tasarlanan sabit arzlı kullanım tokenidir; henüz satışta değildir.
 
 ## Hazır bileşenler
@@ -54,6 +56,7 @@ npm run token:verify
 - [Global platform uygunluk matrisi](docs/GLOBAL_LISTING_READINESS.md)
 - [İngilizce white paper](output/pdf/tokenlucid-whitepaper-en.pdf)
 - [Dolaşımdaki arz metodolojisi](docs/CIRCULATING_SUPPLY.md)
+- [Devnet dağıtım ve kurucu kilit kanıtları](docs/DEVNET_DISTRIBUTION.md)
 
 Global listeleme hazırlık kontrolü (eksik gerçek şirket/alan adı/piyasa bilgileri varken bilinçli olarak başarısız olur):
 

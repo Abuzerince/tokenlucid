@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T18:35:06.533Z",
+  "generatedAt": "2026-07-02T22:01:14.779Z",
   "files": [
     {
       "file": "package-lock.json",
@@ -13,8 +13,8 @@
     },
     {
       "file": "config/project.config.json",
-      "bytes": 1104,
-      "sha256": "3e6e18875633044e1b33559a0078096243e55a60ac35f099953de1003a3d72b8"
+      "bytes": 1276,
+      "sha256": "317b43fe6bb6e7131ca3b5c2fd8e54d26ac39b4f4790d4a7f48caadf4c6be27b"
     },
     {
       "file": "public/token-metadata.json",

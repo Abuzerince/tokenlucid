@@ -1,7 +1,7 @@
 {
   "openapi": "3.1.0",
   "info": { "title": "TokenLucid Public API", "version": "0.1.0", "description": "Read-only token identity, supply and Solana risk scan endpoints." },
-  "servers": [{ "url": "https://YOUR_DOMAIN" }],
+  "servers": [{ "url": "https://tokenlucid.onrender.com" }],
   "paths": {
     "/api/health": { "get": { "summary": "Service health", "responses": { "200": { "description": "Healthy" } } } },
     "/api/token": { "get": { "summary": "TLCD identity, status and supply disclosure", "responses": { "200": { "description": "Token disclosure" } } } },

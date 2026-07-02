@@ -112,6 +112,6 @@ export function App() {
     </div></section>
 
     <section className="cta"><div><div className="section-kicker">ŞEFFAFLIK VARSA GÜVEN BAŞLAR</div><h2>Bir tokeni incelemek<br/>30 saniyeden kısa sürer.</h2></div><a className="primary" href="#scanner">Mint adresini analiz et <ArrowRight/></a></section>
-    <footer><div><a className="brand" href="#top"><img src="/tokenlucid-token.svg" alt=""/>TokenLucid</a><p>Zincir üstü riskleri anlaşılır kılan açık analiz katmanı.</p></div><div className="footer-links"><a href="/en.html">English</a><a href="#metodoloji">Metodoloji</a><a href="/whitepaper.pdf" target="_blank">White paper</a><a href="/privacy.html">Gizlilik</a><a href="/terms.html">Koşullar</a></div><p className="legal">© 2026 TokenLucid. Yatırım tavsiyesi değildir. TLCD henüz halka arz edilmemiştir.</p></footer>
+    <footer><div><a className="brand" href="#top"><img src="/tokenlucid-token.svg" alt=""/>TokenLucid</a><p>Zincir üstü riskleri anlaşılır kılan açık analiz katmanı.</p></div><div className="footer-links"><a href="/en.html">English</a><a href="#metodoloji">Metodoloji</a><a href="/whitepaper.pdf" target="_blank">White paper</a><a href="/devnet.html">Devnet kanıtları</a><a href="/privacy.html">Gizlilik</a><a href="/terms.html">Koşullar</a></div><p className="legal">© 2026 TokenLucid. Yatırım tavsiyesi değildir. TLCD henüz halka arz edilmemiştir.</p></footer>
   </main>
 }
