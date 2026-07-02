@@ -1,0 +1,13 @@
+{
+  "openapi": "3.1.0",
+  "info": { "title": "TokenLucid Public API", "version": "0.1.0", "description": "Read-only token identity, supply and Solana risk scan endpoints." },
+  "servers": [{ "url": "https://YOUR_DOMAIN" }],
+  "paths": {
+    "/api/health": { "get": { "summary": "Service health", "responses": { "200": { "description": "Healthy" } } } },
+    "/api/token": { "get": { "summary": "TLCD identity, status and supply disclosure", "responses": { "200": { "description": "Token disclosure" } } } },
+    "/api/token/supply/max": { "get": { "summary": "Maximum supply as plain text", "responses": { "200": { "description": "Maximum supply" } } } },
+    "/api/token/supply/total": { "get": { "summary": "Issued total supply as plain text", "responses": { "200": { "description": "Total supply" } } } },
+    "/api/token/supply/circulating": { "get": { "summary": "Published circulating supply as plain text", "responses": { "200": { "description": "Circulating supply" }, "503": { "description": "Not published before launch" } } } },
+    "/api/scan": { "post": { "summary": "Analyze a Solana mint", "requestBody": { "required": true, "content": { "application/json": { "schema": { "type": "object", "required": ["address"], "properties": { "address": { "type": "string", "minLength": 32, "maxLength": 44 } } } } } }, "responses": { "200": { "description": "Explainable risk result" }, "400": { "description": "Invalid mint" }, "502": { "description": "RPC unavailable" } } } }
+  }
+}

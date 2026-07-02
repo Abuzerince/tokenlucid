@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tokenlucid
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: SOLANA_RPC_URLS
+        sync: false
+      - key: TRUST_PROXY
+        value: "1"

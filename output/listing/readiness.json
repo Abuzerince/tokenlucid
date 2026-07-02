@@ -1,0 +1,88 @@
+{
+  "ready": false,
+  "generatedAt": "2026-07-02T11:36:20.713Z",
+  "passed": 0,
+  "total": 16,
+  "checks": [
+    {
+      "id": "token-config",
+      "ready": false,
+      "detail": "Mainnet token config, immutable metadata and wallet addresses"
+    },
+    {
+      "id": "mainnet-deployment",
+      "ready": false,
+      "detail": "Finalized mint record matches the public project mint address"
+    },
+    {
+      "id": "official-domain",
+      "ready": false,
+      "detail": "Working HTTPS project website"
+    },
+    {
+      "id": "domain-email",
+      "ready": false,
+      "detail": "Official-domain contact email"
+    },
+    {
+      "id": "english-whitepaper",
+      "ready": false,
+      "detail": "Public English white paper"
+    },
+    {
+      "id": "source-code",
+      "ready": false,
+      "detail": "Public source repository"
+    },
+    {
+      "id": "policies",
+      "ready": false,
+      "detail": "Privacy policy and terms"
+    },
+    {
+      "id": "security-contact",
+      "ready": false,
+      "detail": "Official security contact and disclosure policy"
+    },
+    {
+      "id": "social-presence",
+      "ready": false,
+      "detail": "Official X and Telegram URLs"
+    },
+    {
+      "id": "legal-entity",
+      "ready": false,
+      "detail": "Legal entity, jurisdiction and registration details"
+    },
+    {
+      "id": "team",
+      "ready": false,
+      "detail": "Public team biographies or accountable representatives"
+    },
+    {
+      "id": "trademark",
+      "ready": false,
+      "detail": "Name/ticker/logo trademark and collision review"
+    },
+    {
+      "id": "independent-audit",
+      "ready": false,
+      "detail": "Independent security review URL"
+    },
+    {
+      "id": "tge",
+      "ready": false,
+      "detail": "Verifiable UTC TGE announcement"
+    },
+    {
+      "id": "liquidity",
+      "ready": false,
+      "detail": "Live DEX pool, material liquidity and published policy"
+    },
+    {
+      "id": "supply-methodology",
+      "ready": false,
+      "detail": "Timestamped circulating-supply methodology"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "status": "prelaunch",
+  "mintAddress": "",
+  "projectName": "TokenLucid",
+  "englishName": "TokenLucid",
+  "officialWebsite": "https://YOUR_DOMAIN",
+  "officialEmail": "hello@YOUR_DOMAIN",
+  "sourceCodeUrl": "https://github.com/YOUR_ORG/tokenlucid",
+  "englishWhitepaperUrl": "https://YOUR_DOMAIN/whitepaper-en.pdf",
+  "turkishWhitepaperUrl": "https://YOUR_DOMAIN/whitepaper.pdf",
+  "privacyUrl": "https://YOUR_DOMAIN/privacy.html",
+  "termsUrl": "https://YOUR_DOMAIN/terms.html",
+  "socials": {
+    "x": "",
+    "telegram": "",
+    "discord": ""
+  },
+  "legalEntity": {
+    "name": "",
+    "jurisdiction": "",
+    "registrationNumber": "",
+    "registeredAddress": ""
+  },
+  "teamPublic": false,
+  "trademarkSearchCompleted": false,
+  "independentAuditUrl": "",
+  "tge": {
+    "dateUtc": "",
+    "announcementUrl": ""
+  },
+  "market": {
+    "dex": "Orca",
+    "pair": "TLCD/USDC",
+    "poolAddress": "",
+    "initialLiquidityUsd": 0,
+    "liquidityPolicyUrl": ""
+  },
+  "circulatingSupply": {
+    "amount": 0,
+    "asOfUtc": "",
+    "methodologyUrl": "https://YOUR_DOMAIN/circulating-supply"
+  }
+}

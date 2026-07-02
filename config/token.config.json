@@ -1,0 +1,19 @@
+{
+  "name": "TokenLucid Utility Token",
+  "symbol": "TLCD",
+  "decimals": 6,
+  "supply": 10000000,
+  "description": "A fixed-supply utility token designed for TokenLucid report credits, monitoring features and verified community contributions. It provides no equity, profit-sharing or guaranteed return.",
+  "metadataUri": "https://YOUR_DOMAIN/token-metadata.json",
+  "metadataSha256": "",
+  "expectedMainnetPayer": "",
+  "genesisCustody": "5tAEAScgLZCpZkPFHLaFGUij18vLY9ELgoXNb98XDyBo",
+  "mainnetReady": false,
+  "allocations": [
+    { "name": "Topluluk katkıları", "percent": 55, "address": "" },
+    { "name": "Ürün hazinesi", "percent": 20, "address": "" },
+    { "name": "Kurucu payı - kilitli", "percent": 10, "address": "" },
+    { "name": "Gelecekteki likidite", "percent": 10, "address": "" },
+    { "name": "Ortaklıklar", "percent": 5, "address": "" }
+  ]
+}

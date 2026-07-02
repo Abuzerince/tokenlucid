@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-07-02T15:48:19.030Z",
+  "files": [
+    {
+      "file": "package-lock.json",
+      "bytes": 151092,
+      "sha256": "bcf2cd10a52be610fdf54b385afa801f4af4348ab64eaad7474ffeba0aa09720"
+    },
+    {
+      "file": "config/token.config.json",
+      "bytes": 875,
+      "sha256": "8e317cf832e88772aee9108fabca2c0e880fb1c390313dd531f618c22afb8bca"
+    },
+    {
+      "file": "config/project.config.json",
+      "bytes": 1104,
+      "sha256": "3e6e18875633044e1b33559a0078096243e55a60ac35f099953de1003a3d72b8"
+    },
+    {
+      "file": "public/token-metadata.json",
+      "bytes": 776,
+      "sha256": "a148e186c150bf796ae97a43d7f6b3b8d309bd3b843b92b8d2ffa78a7d8a6ddd"
+    },
+    {
+      "file": "public/tokenlucid-token.svg",
+      "bytes": 672,
+      "sha256": "01f9d67bb749c5ae3b1cd9a3a9e0238df7c28c182df6a9028d7e61f96cfdf1ff"
+    },
+    {
+      "file": "public/tokenlucid-token-512.png",
+      "bytes": 42050,
+      "sha256": "0ffc22b9405772125fc64d2c8963b79b0ee8dd30ca2955e82fb6f977711004f8"
+    },
+    {
+      "file": "output/pdf/tokenlucid-whitepaper.pdf",
+      "bytes": 93116,
+      "sha256": "6660a0dd62f7794ad41883aabd97e02ac62de94c528586b90dc4c67820f02ef0"
+    },
+    {
+      "file": "output/pdf/tokenlucid-whitepaper-en.pdf",
+      "bytes": 90266,
+      "sha256": "e6629d82036bf9942444c61e21cf41723938b64c5eb868c4dfc2703755dacd02"
+    }
+  ]
+}

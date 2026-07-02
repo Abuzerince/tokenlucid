@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="TokenLucid token">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#65f4b5"/><stop offset="1" stop-color="#18b979"/></linearGradient></defs>
+  <rect width="512" height="512" rx="128" fill="#07110e"/>
+  <circle cx="256" cy="256" r="181" fill="none" stroke="url(#g)" stroke-width="18"/>
+  <path d="M158 174h196M256 174v166h104" fill="none" stroke="url(#g)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m337 139 37 17-17 37" fill="none" stroke="#eef8f4" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

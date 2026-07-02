@@ -1,0 +1,14 @@
+{
+  "name": "TokenLucid Utility Token",
+  "symbol": "TLCD",
+  "description": "A fixed-supply utility token designed for TokenLucid report credits, monitoring features and verified community contributions. It provides no equity, profit-sharing or guaranteed return.",
+  "image": "https://YOUR_DOMAIN/tokenlucid-token-512.png",
+  "external_url": "https://YOUR_DOMAIN",
+  "attributes": [
+    { "trait_type": "Network", "value": "Solana" },
+    { "trait_type": "Supply", "value": "Fixed" },
+    { "trait_type": "Mint Authority", "value": "Revoked after genesis" },
+    { "trait_type": "Freeze Authority", "value": "Revoked after genesis" }
+  ],
+  "properties": { "category": "utility", "files": [{ "uri": "https://YOUR_DOMAIN/tokenlucid-token-512.png", "type": "image/png" }] }
+}
