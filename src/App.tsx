@@ -2,7 +2,7 @@ import { FormEvent, useState } from 'react'
 import { AlertTriangle, ArrowRight, BarChart3, Check, CheckCircle2, ChevronRight, FileText, Fingerprint, LockKeyhole, Menu, Radar, ScanSearch, ShieldCheck, Sparkles, X } from 'lucide-react'
 import { scanMint, type ScanResult } from './scanner'
 
-const EXAMPLE = 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'
+const EXAMPLE = 'AkGtTz4FgowEznDoxnnRpaVfAuBBKJbdEh8xkDgHA6nQ'
 const allocations = [
   ['Topluluk katkıları', 55, '#53e5a2'], ['Ürün hazinesi', 20, '#3db7e4'],
   ['Kurucu - 12 ay kilit', 10, '#8b7cf6'], ['Gelecekteki likidite', 10, '#f4bf5e'], ['Ortaklıklar', 5, '#ef7f98'],
@@ -47,7 +47,7 @@ export function App() {
         </div>
         <div className="radar-card">
           <div className="radar-top"><span>CANLI RİSK SİNYALLERİ</span><Radar size={18}/></div>
-          <div className="radar-visual"><i/><i/><i/><b/><span>AR</span></div>
+          <div className="radar-visual"><i/><i/><i/><b/><span>TL</span></div>
           <div className="signal"><span>Mint yetkisi</span><strong>+25 puan</strong></div>
           <div className="signal"><span>Freeze yetkisi</span><strong>+20 puan</strong></div>
           <div className="signal"><span>Cüzdan yoğunlaşması</span><strong>+50 puana kadar</strong></div>
@@ -60,7 +60,7 @@ export function App() {
       <h2>Bir mint adresi, dört kritik kontrol.</h2>
       <form onSubmit={submit}>
         <div className="search"><ScanSearch/><input aria-label="Token adresi" value={address} onChange={e => setAddress(e.target.value)} placeholder="Solana token mint adresini yapıştır…"/><button disabled={loading}>{loading ? <><span className="spinner"/>Taranıyor</> : <>Analiz et <ArrowRight size={17}/></>}</button></div>
-        <button className="example" type="button" onClick={() => setAddress(EXAMPLE)}>Örnek: USDC mint adresini kullan</button>
+        <button className="example" type="button" onClick={() => setAddress(EXAMPLE)}>Örnek: TLCD devnet mint adresini kullan</button>
       </form>
       {error && <div className="error"><AlertTriangle size={18}/>{error}</div>}
 
@@ -78,7 +78,7 @@ export function App() {
           <article><small>İlk 10 hesap</small><strong>{result.concentrationAvailable ? `%${result.top10.toFixed(1)}` : 'Veri kısıtlı'}</strong></article>
         </div>
         <div className="warnings"><h4>Analiz notları</h4>{result.warnings.length ? result.warnings.map(note => <p key={note}><AlertTriangle size={17}/>{note}</p>) : <p className="safe"><CheckCircle2 size={17}/>Temel kontrollerde belirgin bir risk işareti bulunmadı.</p>}<small>Otomatik sonuç yatırım tavsiyesi veya kapsamlı güvenlik denetimi değildir.</small></div>
-        <a className="explorer" href={`https://solscan.io/token/${result.address}`} target="_blank" rel="noreferrer">Solscan üzerinde bağımsız doğrula <ArrowRight size={15}/></a>
+        <a className="explorer" href={`https://explorer.solana.com/address/${result.address}?cluster=devnet`} target="_blank" rel="noreferrer">Solana Explorer'da devnet üzerinde doğrula <ArrowRight size={15}/></a>
       </div>}
     </section>
 
