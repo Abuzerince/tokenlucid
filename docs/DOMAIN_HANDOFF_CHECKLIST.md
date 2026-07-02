@@ -21,6 +21,7 @@ This is the controlled handoff for replacing the temporary Render address with t
    - `public/.well-known/security.txt`;
    - `public/security.html`.
 4. Change `public/openapi.json` from the temporary Render URL to the official HTTPS URL.
+   Also replace the temporary URL in `index.html`, `public/robots.txt` and `public/sitemap.xml`.
 5. Update metadata image and external URLs, regenerate `metadataSha256`, then publish the final immutable metadata through the approved Arweave/IPFS workflow.
 6. Regenerate both white papers and the release manifest; verify all PDF pages visually.
 7. Create official X, Telegram and Discord accounts with the domain mailbox and hardware-key MFA, then add their URLs to `project.config.json`.
