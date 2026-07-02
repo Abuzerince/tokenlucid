@@ -17,3 +17,14 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm audit --omit=dev
+      - name: Build and smoke-test production image
+        run: |
+          docker build -t tokenlucid-ci .
+          docker run -d --rm --name tokenlucid-ci -p 5173:5173 tokenlucid-ci
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:5173/api/health >/dev/null; then break; fi
+            sleep 1
+          done
+          curl --fail --silent http://127.0.0.1:5173/api/health | grep '"ok":true'
+          curl --fail --silent --show-error --header 'Accept: text/plain' http://127.0.0.1:5173/.well-known/security.txt | grep '^Contact: mailto:'
+          docker stop tokenlucid-ci
