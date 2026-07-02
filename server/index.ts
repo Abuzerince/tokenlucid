@@ -29,10 +29,12 @@ app.disable('x-powered-by')
 app.use(helmet(process.env.NODE_ENV === 'production'
   ? { crossOriginEmbedderPolicy: false }
   : { contentSecurityPolicy: false, crossOriginEmbedderPolicy: false }))
+app.use((_req, res, next) => { res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), payment=()'); next() })
 app.use(express.json({ limit: '8kb' }))
 app.use('/api', rateLimit({ windowMs: 60_000, limit: 30, standardHeaders: 'draft-8', legacyHeaders: false }))
 
 app.get('/api/health', (_req, res) => res.json({ ok: true, service: 'tokenlucid-api' }))
+app.get('/.well-known/security.txt', (_req, res) => res.type('text/plain').sendFile(path.join(root, 'public', '.well-known', 'security.txt')))
 app.get('/api/token', (_req, res) => {
   res.set('cache-control', projectConfig.status === 'launched' ? 'public, max-age=300' : 'no-store')
   res.json({
