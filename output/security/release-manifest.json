@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T15:48:19.030Z",
+  "generatedAt": "2026-07-02T18:12:06.297Z",
   "files": [
     {
       "file": "package-lock.json",
@@ -9,7 +9,7 @@
     {
       "file": "config/token.config.json",
       "bytes": 875,
-      "sha256": "8e317cf832e88772aee9108fabca2c0e880fb1c390313dd531f618c22afb8bca"
+      "sha256": "1572781220816587c74e97a0ba589404e45bcef02bf3f72d16e6dcc54ae68b72"
     },
     {
       "file": "config/project.config.json",
@@ -33,13 +33,13 @@
     },
     {
       "file": "output/pdf/tokenlucid-whitepaper.pdf",
-      "bytes": 93116,
-      "sha256": "6660a0dd62f7794ad41883aabd97e02ac62de94c528586b90dc4c67820f02ef0"
+      "bytes": 93117,
+      "sha256": "8544a9e60bcdfabec57435c9fb6095daf8e5df47a0d0830a3c2ba8aabb980d85"
     },
     {
       "file": "output/pdf/tokenlucid-whitepaper-en.pdf",
-      "bytes": 90266,
-      "sha256": "e6629d82036bf9942444c61e21cf41723938b64c5eb868c4dfc2703755dacd02"
+      "bytes": 90265,
+      "sha256": "083c0ce8d1d221728a7312a1fe5b8e589688cfa58f88b127cb9d40b72e856fbf"
     }
   ]
 }

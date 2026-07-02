@@ -71,9 +71,9 @@ TLCD does not provide voting control over a legal entity, dividends, revenue sha
 
 | Allocation | Share | Tokens | Status before genesis |
 |---|---:|---:|---|
-| Community contributions | 55% | 5,500,000 | Distribution rules and evidence required |
+| Community contributions | 50% | 5,000,000 | Distribution rules and evidence required |
 | Product treasury | 20% | 2,000,000 | Multisig custody required |
-| Founder allocation | 10% | 1,000,000 | At least 12-month verifiable lock required |
+| Founder allocation | 15% | 1,500,000 | At least 12-month verifiable lock required |
 | Future liquidity | 10% | 1,000,000 | Not circulating until deposited |
 | Partnerships | 5% | 500,000 | Not circulating until distributed |
 | Total | 100% | 10,000,000 | Fixed maximum supply |

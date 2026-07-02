@@ -99,9 +99,9 @@ TLCD; şirket hissesi, borçlanma aracı, temettü hakkı, gelir payı, faiz, ge
 
 | Havuz | Oran | TLCD | İlke |
 |---|---:|---:|---|
-| Topluluk katkıları | %55 | 5.500.000 | Belgeli görev ve doğrulanmış katkı |
+| Topluluk katkıları | %50 | 5.000.000 | Belgeli görev ve doğrulanmış katkı |
 | Ürün hazinesi | %20 | 2.000.000 | Ürün geliştirme ve operasyon |
-| Kurucu payı | %10 | 1.000.000 | En az 12 ay kilit |
+| Kurucu payı | %15 | 1.500.000 | En az 12 ay kilit |
 | Gelecekteki likidite | %10 | 1.000.000 | Ürün kullanımı ve uyum sonrası |
 | Ortaklıklar | %5 | 500.000 | Belgeli entegrasyon ve araştırma |
 

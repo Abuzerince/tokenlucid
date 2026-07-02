@@ -4,8 +4,8 @@ import { scanMint, type ScanResult } from './scanner'
 
 const EXAMPLE = 'AkGtTz4FgowEznDoxnnRpaVfAuBBKJbdEh8xkDgHA6nQ'
 const allocations = [
-  ['Topluluk katkıları', 55, '#53e5a2'], ['Ürün hazinesi', 20, '#3db7e4'],
-  ['Kurucu - 12 ay kilit', 10, '#8b7cf6'], ['Gelecekteki likidite', 10, '#f4bf5e'], ['Ortaklıklar', 5, '#ef7f98'],
+  ['Topluluk katkıları', 50, '#53e5a2'], ['Ürün hazinesi', 20, '#3db7e4'],
+  ['Kurucu - 12 ay kilit', 15, '#8b7cf6'], ['Gelecekteki likidite', 10, '#f4bf5e'], ['Ortaklıklar', 5, '#ef7f98'],
 ] as const
 
 function short(value: string | null) { return value ? `${value.slice(0, 5)}…${value.slice(-5)}` : 'Kalıcı olarak kapalı' }

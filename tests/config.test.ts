@@ -18,7 +18,7 @@ describe('TLCD token yapılandırması', () => {
   it('dağıtımı kayan nokta kullanmadan baz birimlere böler', () => {
     const { total, amounts } = allocationBaseUnits(config)
     expect(amounts.reduce((sum, value) => sum + value, 0n)).toBe(total)
-    expect(amounts[0]).toBe(5_500_000_000_000n)
+    expect(amounts[0]).toBe(5_000_000_000_000n)
   })
 
   it('yalnız içerik adresli metadata URI biçimlerini kabul eder', () => {

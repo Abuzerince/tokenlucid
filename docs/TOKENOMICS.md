@@ -21,9 +21,9 @@ Durum: Genesis öncesi tasarım - 2 Temmuz 2026
 
 | Havuz | Oran | Miktar | İlke |
 |---|---:|---:|---|
-| Topluluk katkıları | %55 | 5.500.000 | Analiz doğrulama, veri ve erken test katkıları |
+| Topluluk katkıları | %50 | 5.000.000 | Analiz doğrulama, veri ve erken test katkıları |
 | Ürün hazinesi | %20 | 2.000.000 | Ürün geliştirme ve uzun vadeli operasyon |
-| Kurucu payı | %10 | 1.000.000 | En az 12 ay kilit; kamuya açık cüzdan |
+| Kurucu payı | %15 | 1.500.000 | En az 12 ay kilit; kamuya açık cüzdan |
 | Gelecekteki likidite | %10 | 1.000.000 | Ürün kullanımı ve hukuki hazırlık sonrası |
 | Ortaklıklar | %5 | 500.000 | Belgeli entegrasyon ve araştırma ortaklıkları |
 

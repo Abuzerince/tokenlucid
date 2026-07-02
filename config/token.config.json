@@ -10,9 +10,9 @@
   "genesisCustody": "5tAEAScgLZCpZkPFHLaFGUij18vLY9ELgoXNb98XDyBo",
   "mainnetReady": false,
   "allocations": [
-    { "name": "Topluluk katkıları", "percent": 55, "address": "" },
+    { "name": "Topluluk katkıları", "percent": 50, "address": "" },
     { "name": "Ürün hazinesi", "percent": 20, "address": "" },
-    { "name": "Kurucu payı - kilitli", "percent": 10, "address": "" },
+    { "name": "Kurucu payı - kilitli", "percent": 15, "address": "" },
     { "name": "Gelecekteki likidite", "percent": 10, "address": "" },
     { "name": "Ortaklıklar", "percent": 5, "address": "" }
   ]
