@@ -38,3 +38,5 @@
 ## Bağımlılık taraması
 
 Üretim bağımlılıkları `npm audit --omit=dev` ile sıfır bilinen açık vermektedir. Solana/Metaplex araç zincirinde eski Web3.js transitif uyarıları bulunmaktadır; bu paketler üretim sunucusuna kurulmayacak geliştirme bağımlılıklarıdır. Mainnet öncesinde araç zinciri yeniden taranmalı ve mümkünse güncel Solana Kit tabanlı sürüme geçirilmelidir.
+
+Streamflow SDK yalnızca geliştirme bağımlılığıdır ve üretim Docker imajına dahil edilmez. SDK'nın transitif Solana bağımlılıklarında npm audit uyarıları bulunduğundan mainnet kullanımı öncesinde sürüm, program kimliği, ücretler ve yayımlanmış denetimler yeniden doğrulanmalıdır.

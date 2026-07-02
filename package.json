@@ -15,6 +15,7 @@
     "token:recover": "tsx scripts/recover-token.ts",
     "token:verify": "tsx scripts/verify-token.ts",
     "token:distribute": "tsx scripts/distribute-token.ts",
+    "token:lock-founder": "tsx scripts/create-devnet-founder-lock.ts",
     "listing:check": "tsx scripts/check-listing-readiness.ts",
     "release:manifest": "tsx scripts/generate-release-manifest.ts"
   },
@@ -35,6 +36,7 @@
     "@resvg/resvg-js": "2.6.2",
     "@solana/spl-token": "0.4.14",
     "@solana/web3.js": "1.98.4",
+    "@streamflow/stream": "12.5.0",
     "@types/express": "5.0.6",
     "@types/node": "26.1.0",
     "@types/react": "19.2.17",

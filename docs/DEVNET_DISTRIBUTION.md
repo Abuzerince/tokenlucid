@@ -22,4 +22,14 @@ Verification after distribution confirmed:
 - mint and freeze authorities remain permanently revoked;
 - supply, decimals and immutable metadata still match the genesis record.
 
-The founder allocation is not yet enforced by an on-chain vesting program. A separate devnet vesting test is required before any mainnet design is approved.
+## Founder lock
+
+The 1,500,000 TLCD founder test allocation was moved into a non-cancelable, non-transferable Streamflow devnet lock:
+
+- unlock time: `2027-07-02T00:00:00.000Z`;
+- recipient: `5tAEAScgLZCpZkPFHLaFGUij18vLY9ELgoXNb98XDyBo`;
+- Streamflow metadata account: `GDtDWGsx1WKXc3fjhCpuPqxc54xMmEViqb4X6VQu9Yu2`;
+- transaction: `dwDMG3UU98RAvALUeuUUkp5xVDgyCTDAjQ1nF5R2wkT3oc6uYZs26jatQf96LepXTwBLM4ANYfY2XBTeCJssCMi`;
+- devnet program: `HqDGZjaVRXJ9MGRQEw7qDc2rAr6iH1n1kAQdCZaCMfMZ`.
+
+Post-creation verification confirmed that neither sender nor recipient can cancel or transfer the contract. Mainnet use still requires a fresh review of the protocol, program ID, fees, audit status and dependency advisories.
