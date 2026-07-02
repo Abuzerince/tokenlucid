@@ -6,7 +6,7 @@ import { createUmi } from '@metaplex-foundation/umi-bundle-defaults'
 import { LAMPORTS_PER_SOL, Connection, PublicKey } from '@solana/web3.js'
 import { getMint, TOKEN_PROGRAM_ID } from '@solana/spl-token'
 import {
-  assertExpectedPayer, assertFreshDeployment, assertRpcNetwork, atomicWriteJson, configSha256,
+  assertExpectedPayer, assertFreshDeployment, assertRpcNetwork, atomicWriteJson, configSha256, genesisConfigSha256,
   loadConfig, loadKeypair, networkSettings, requireMainnetSafety, validateConfig, verifyRemoteMetadata,
 } from './lib.js'
 import { buildAtomicGenesis } from './genesis.js'
@@ -38,7 +38,7 @@ const createdAt = new Date().toISOString()
 if (transactionBytes > 1232) throw new Error(`Atomik oluşturma işlemi Solana işlem sınırını aşıyor: ${transactionBytes} byte.`)
 atomicWriteJson(pendingPath, {
   network: cluster, mint: mintKey.toBase58(), payer: payer.publicKey.toBase58(), custody: custody.toString(),
-  status: 'atomic-transaction-prepared', transactionBytes, configSha256: configSha256(config), createdAt,
+  status: 'atomic-transaction-prepared', transactionBytes, configSha256: configSha256(config), genesisConfigSha256: genesisConfigSha256(config), createdAt,
 })
 
 console.log(`${cluster}: ${config.name} tek atomik işlemle oluşturuluyor...`)
@@ -59,7 +59,7 @@ if (Object.values(checks).some(value => !value)) throw new Error(`Zincir üstü 
 const record = {
   network: cluster, mint: mintKey.toBase58(), payer: payer.publicKey.toBase58(), custody: custody.toString(),
   supply: config.supply, decimals: config.decimals, mintAuthority: null, freezeAuthority: null,
-  metadataUri: config.metadataUri, metadataImmutable: true, configSha256: configSha256(config),
+  metadataUri: config.metadataUri, metadataImmutable: true, configSha256: configSha256(config), genesisConfigSha256: genesisConfigSha256(config),
   transactionSignatureBase64: Buffer.from(sent.signature).toString('base64'), transactionBytes, createdAt,
   explorer: `https://explorer.solana.com/address/${mintKey.toBase58()}?cluster=${cluster}`,
 }

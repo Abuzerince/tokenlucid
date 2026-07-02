@@ -3,7 +3,7 @@ import path from 'node:path'
 import { getAccount, getAssociatedTokenAddress, getMint, getOrCreateAssociatedTokenAccount, TOKEN_PROGRAM_ID, transferChecked } from '@solana/spl-token'
 import { Connection, PublicKey } from '@solana/web3.js'
 import {
-  allocationBaseUnits, assertExpectedPayer, assertRpcNetwork, atomicWriteJson, configSha256, loadConfig, loadKeypair,
+  allocationBaseUnits, assertExpectedPayer, assertRpcNetwork, atomicWriteJson, genesisConfigSha256, loadConfig, loadKeypair,
   networkSettings, requireMainnetSafety, validateConfig,
 } from './lib.js'
 
@@ -18,8 +18,8 @@ if (configErrors.length) throw new Error(`Dağıtım yapılandırma hataları:\n
 
 const recordPath = path.resolve(`deployment/${cluster}.json`)
 if (!fs.existsSync(recordPath)) throw new Error(`${recordPath} bulunamadı.`)
-const record = JSON.parse(fs.readFileSync(recordPath, 'utf8')) as { mint: string; configSha256: string }
-if (record.configSha256 !== configSha256(config)) throw new Error('Token oluşturulduktan sonra yapılandırma değişmiş. Güvenlik için dağıtım durduruldu.')
+const record = JSON.parse(fs.readFileSync(recordPath, 'utf8')) as { mint: string; genesisConfigSha256?: string }
+if (record.genesisConfigSha256 !== genesisConfigSha256(config)) throw new Error('Token oluşturulduktan sonra değişmez genesis yapılandırması değişmiş. Güvenlik için dağıtım durduruldu.')
 
 const payer = loadKeypair(mainnet)
 assertExpectedPayer(config, payer, mainnet)

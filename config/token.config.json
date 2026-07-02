@@ -10,10 +10,10 @@
   "genesisCustody": "5tAEAScgLZCpZkPFHLaFGUij18vLY9ELgoXNb98XDyBo",
   "mainnetReady": false,
   "allocations": [
-    { "name": "Topluluk katkıları", "percent": 50, "address": "" },
-    { "name": "Ürün hazinesi", "percent": 20, "address": "" },
-    { "name": "Kurucu payı - kilitli", "percent": 15, "address": "" },
-    { "name": "Gelecekteki likidite", "percent": 10, "address": "" },
-    { "name": "Ortaklıklar", "percent": 5, "address": "" }
+    { "name": "Topluluk katkıları", "percent": 50, "address": "aiYnFAQH7LbGu9yqTALCtJpVrPjY9UpCGPsd72DzvaY" },
+    { "name": "Ürün hazinesi", "percent": 20, "address": "FByDtjbqibhUoVsXFgis648K7PxRRhPrr9NL4kKitRYX" },
+    { "name": "Kurucu payı - kilitli", "percent": 15, "address": "57L9RJyoEoHsnNBgfQPM2sJH3q4Ug3xRLxsEGeJMyy4V" },
+    { "name": "Gelecekteki likidite", "percent": 10, "address": "3iX9X128rqiYzjWPXHi1C1UYr1YhXtVzzTm2NvsoNHF8" },
+    { "name": "Ortaklıklar", "percent": 5, "address": "97KRNJxrkqTQyKB358q5jr5fvzbSNZTfRqxLpVegncSo" }
   ]
 }

@@ -121,6 +121,17 @@ export function configSha256(config: TokenConfig) {
   return crypto.createHash('sha256').update(JSON.stringify(config)).digest('hex')
 }
 
+export function genesisConfigSha256(config: TokenConfig) {
+  const immutableGenesis = {
+    name: config.name,
+    symbol: config.symbol,
+    decimals: config.decimals,
+    supply: config.supply,
+    metadataUri: config.metadataUri,
+  }
+  return crypto.createHash('sha256').update(JSON.stringify(immutableGenesis)).digest('hex')
+}
+
 export async function verifyRemoteMetadata(config: TokenConfig) {
   const controller = new AbortController()
   const timeout = setTimeout(() => controller.abort(), 10_000)
