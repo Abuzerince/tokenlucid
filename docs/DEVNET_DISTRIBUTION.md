@@ -33,3 +33,17 @@ The 1,500,000 TLCD founder test allocation was moved into a non-cancelable, non-
 - devnet program: `HqDGZjaVRXJ9MGRQEw7qDc2rAr6iH1n1kAQdCZaCMfMZ`.
 
 Post-creation verification confirmed that neither sender nor recipient can cancel or transfer the contract. Mainnet use still requires a fresh review of the protocol, program ID, fees, audit status and dependency advisories.
+
+## Product treasury multisig
+
+The 2,000,000 TLCD product treasury test allocation is controlled by a native SPL Token 2-of-3 multisig:
+
+- multisig: `2M2yf8Njn1WvjVwj9ioebgk3DDjBMDRPH3ytnd6u3Djf`;
+- treasury token account: `93vnAZ3BU6wkhaZZKGgqCJEfygX7yomcS75r8YdU7tZ1`;
+- signer 1: `EA3jVjWuci25DYzKW2JXTgpjSgDba5LYxE2QzmE34Rsx`;
+- signer 2: `GRE15b8eVp7cyQp3rpoZb9jCTWAFUgpWVp1mWk3nLNpp`;
+- signer 3: `CCgEiPBTCxu2jfLMGWPhFoX7tZhHntKQosSYBudzxKf9`;
+- authority-change transaction: `3FbDcGffvetSvUZFTU5omyTPCPzamq8qxxwrWPzeRCtGgxfLumGZWhrh9HGspKedTDqYhxyi8rHPTLB6ddAb7sZC`;
+- successful two-signer test: `5ffWFkFhUngHQ7KtPn2UXNx8d9eZUyMjtK2DW7FW8d3knEY4Ybo1cDHKKV9wwwMXUerd8ArVpEKcqfzXQvCnr571`.
+
+The negative test confirmed that one signer cannot transfer treasury tokens. A two-signer transfer of 1 TLCD succeeded, the token was returned, the temporary account was closed and the final treasury balance remained 2,000,000 TLCD.
